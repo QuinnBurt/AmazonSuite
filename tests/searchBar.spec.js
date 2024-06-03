@@ -14,6 +14,7 @@ test ('search bar has functional input', async () => {
     }
 
     catch(err) {
+        console.log(err);
         page.close();
         test.fail();
     }
@@ -34,6 +35,7 @@ test ('search function results in correct query', async () =>{
     }
 
     catch(err) {
+        console.log(err);
         page.close();
         test.fail();
     }
@@ -57,6 +59,7 @@ test ('"search in dropdown" results in department specific search', async () =>{
     }
   
     catch(err){
+        console.log(err);
         page.close()
         test.fail();
     }

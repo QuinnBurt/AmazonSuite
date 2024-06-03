@@ -3,7 +3,7 @@ const { chromium } = require('playwright');
 module.exports = {
     //new page initialization, defaults to homepage
     newPage : async (url = 'https://www.amazon.com/') => {
-        const browser = await chromium.launch({ headless: true })
+        const browser = await chromium.launch({ headless: false })
         const context = await browser.newContext();
         const page = await context.newPage();
         await page.goto(url);
